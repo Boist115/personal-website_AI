@@ -20,13 +20,13 @@ const HeroSection = () => {
             <br></br>
             <TypeAnimation
                 sequence={[
-                    "Ramiro",
+                    "Alberto",
+                    1000,
+                    "Software Engineer",
                     1000,
                     "Game Developer",
                     1000,
-                    "Researcher",
-                    1000,
-                    "Teacher",
+                    "IDK",
                     1000,
                 ]}
                 wrapper="span"
@@ -34,9 +34,9 @@ const HeroSection = () => {
                 repeat={Infinity}
                 />
           </h1>
-          <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-          &ldquo;The best way to predict the future is to invent it.&ldquo;
-            — Alan Kay
+          <p className="text-yellow-500 [#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
+          &ldquo;Did you forget who I am?&ldquo;
+            — Optimus Prime
           </p>
           <div>
           <Link
@@ -46,13 +46,6 @@ const HeroSection = () => {
             >
               <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">Software Dev</span>
             </Link>
-            <Link
-              href="/resumes/Game_Dev_Resume.pdf"
-              download="Game_Dev_Resume.pdf"
-              className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-800 boder border-white mt-3 translate-x-[10px] text-white"
-            >
-              <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">Game Dev</span>
-            </Link>
           </div>
         </motion.div>
         <motion.div
@@ -61,9 +54,9 @@ const HeroSection = () => {
           transition={{ duration: 0.5 }}
           className="col-span-4 place-self-center mt-4 lg:mt-0"
         >
-          <div className="rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
+          <div className="rounded-full bg-blue-900 [#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
             <Image
-              src="/images/hero-image.png"
+              src="/images/Wraith.png"
               alt="hero image"
               className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
               width={350}
